@@ -1,8 +1,9 @@
+<h1 align="center">🪧 Expositum Fragmenta 🧱<br>🎁</h1>
 <div align="center">
 	<br>
 	<a href="https://github.com/BFGriffith/expositum-fragmenta/blob/master/images/expositum-fragmenta.svg">
-		<img  src="/images/expositum-fragmenta.svg" 
-          width="800" height="400" 
+		<img src="/images/expositum-fragmenta.svg" 
+          width="100%" height="auto" 
           alt="Expositum Fragmenta">
 	</a>
 	<br>
