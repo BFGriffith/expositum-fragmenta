@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- browser-sync start --server --directory --files='TabloRespondema.html' -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablo Respondema</title>
+<style type="text/css">
+table { width:100%;border-collapse:collapse; }
+/* striping */
+tr:nth-of-type(odd) { background:#eee; }
+th { background:#333;color:white;font-weight:bold; }
+td,th { padding:0.5rem;border:1px solid #ccc;text-align:left; }
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  /* undo Table defaults on mobile */
+  table, thead, tbody, th, td, tr { display: block; }
+  /* hide table headers (but for accessibility not display:none;) */
+  thead tr { position:absolute;top: -9999px;left:-9999px; }
+  tr { border:1px solid #ccc; }
+  /* Behave like “row” */
+  td { border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%; }
+  /* like a Table Header; top／left values mimic padding */
+  td:before { 
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 45%; 
+    padding-right: 0.5rem; 
+    white-space: nowrap;
+  }
+  /* CSS Etikedo Respondema */
+  td:nth-of-type(1):before { content: "🗨 English"; }
+  td:nth-of-type(2):before { content: "🇬🇷 Ἑλληνική"; }
+  td:nth-of-type(3):before { content: "💬 Romanized"; }
+  td:nth-of-type(4):before { content: "🏛️ Philosophy"; }
+  td:nth-of-type(5):before { content: "🗺 Birthplace"; }
+  td:nth-of-type(6):before { content: "🔰 Born"; }
+  td:nth-of-type(7):before { content: "🪦 Died"; }
+  td:nth-of-type(8):before { content: "🏺 Mentor"; }
+  td:nth-of-type(9):before { content: "🌟 Quintessence"; }
+  td:nth-of-type(10):before { content: "ℹ️ Arbitrary Data"; }
+}
+</style>
+</head>
+<body>
+<table role="table">
+  <thead role="rowgroup">
+    <tr role="row">
+      <th role="columnheader">English</th>
+      <th role="columnheader">Ἑλληνική</th>
+      <th role="columnheader">Romanized</th>
+      <th role="columnheader">Philosophical School</th>
+      <th role="columnheader">Birthplace</th>
+      <th role="columnheader">Born</th>
+      <th role="columnheader">Died</th>
+      <th role="columnheader">Mentor</th>
+      <th role="columnheader">Quintessence</th>
+      <th role="columnheader">Arbitrary Data</th>
+    </tr>
+  </thead>
+  <tbody role="rowgroup">
+    <tr role="row">
+      <td role="cell">Heraclitus</td>
+      <td role="cell">Ἡράκλειτος</td>
+      <td role="cell">Herákleitos</td>
+      <td role="cell">Ionian pre‑Socratic</td>
+      <td role="cell">Ephesus, Anatolia</td>
+      <td role="cell">6ₜₕ Ⅽentury ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">5ₜₕ Ⅽentury ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">Bias of Priene</td>
+      <td role="cell">Πάντα ῥεῖ</td>
+      <td role="cell">δὶς ἐς τὸν αὐτὸν ποταμὸν οὐκ ἂν ἐμβαίης.</td>
+    </tr>
+    <tr role="row">
+      <td role="cell">Socrates</td>
+      <td role="cell">Σωκράτης</td>
+      <td role="cell">Sōkrátēs</td>
+      <td role="cell">διάλογος</td>
+      <td role="cell">Deme Alopece, Athens</td>
+      <td role="cell">470 ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">399 ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">ἀγαθοδαίμων</td>
+      <td role="cell">O δε ανεξέταστος βίος ου βιωτός ανθρώπω.</td>
+      <td role="cell">Εν μόνον αγαθόν είναι, την επιστήμην, και εν μόνον κακόν, την αμαθίαν.</td>
+    </tr>
+    <tr role="row">
+      <td role="cell">Plato</td>
+      <td role="cell">Πλάτων</td>
+      <td role="cell">Plátōn</td>
+      <td role="cell">Platonism, idealism, Ἀκαδημία</td>
+      <td role="cell">Athens</td>
+      <td role="cell">420ₛ ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">348 ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">Socrates, Pythagoreans</td>
+      <td role="cell">εἶδος ／ ἰδέα</td>
+      <td role="cell">Πολιτεία</td>
+    </tr>
+    <tr role="row">
+      <td role="cell">Aristotle</td>
+      <td role="cell">Ἀριστοτέλης</td>
+      <td role="cell">Aristotélēs</td>
+      <td role="cell">Peripatetic, Aristotelian</td>
+      <td role="cell">Stagira, Chalcidian League</td>
+      <td role="cell">384 ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">322 ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">Plato</td>
+      <td role="cell">τέλος</td>
+      <td role="cell">Μηδὲν ἄγαν</td>
+    </tr>
+    <tr role="row">
+      <td role="cell">Epicurus</td>
+      <td role="cell">Ἐπίκουρος</td>
+      <td role="cell">Epikouros</td>
+      <td role="cell">Epicureanism, κῆπος</td>
+      <td role="cell">Samos, Greece</td>
+      <td role="cell">341 ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">270 ʙ.ᴄ.ᴇ.</td>
+      <td role="cell">Nausiphanes</td>
+      <td role="cell">λάθε βιώσας</td>
+      <td role="cell">ἀταραξία</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/JavaScript">
+</script>
+</body>
+</html>
